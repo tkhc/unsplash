@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
-
+import Title from './Title'
+import About from './About'
 import Photo from './Photo'
 const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`
 const mainUrl = `https://api.unsplash.com/photos/`
@@ -64,6 +65,8 @@ function App() {
   }
   return (
     <main>
+      <Title />
+      <About />
       <section className='search'>
         <form className='search-form'>
           <input
